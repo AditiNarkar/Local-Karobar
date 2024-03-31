@@ -20,10 +20,7 @@ app.use(express.urlencoded({
     limit: '50mb'
 }))
 
-//app.use(notFound)
-//app.use(errorHandler)
 app.use(cookieParser())
-
 
 app.use(cors({
     origin:"http://localhost:3000",
