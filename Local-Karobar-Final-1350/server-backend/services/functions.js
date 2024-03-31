@@ -65,74 +65,6 @@ exports.authLogin = async(req,res) => {
     console.log("Your generated token is: ",token)
     return res.json({status:200, msg:"Logged in", token:token, userExist:userExist})
 
-    // if (( !username && username =="" || !email && email=="" ) && !password && password=="" ){
-    //     console.log("1", username, email, password)
-    //     return res.json({
-    //         status: 400,
-    //         msg : "Please enter credentials properly"
-    //     })
-    // }
-
-    // else if(username && email && password){
-    //     console.log("2", username, email, password)
-
-    //     const userExist = await USER.findOne({ username:username, email: email})
-
-    //     if(!userExist){
-    //         return res.json({msg : "Account not found"})
-    //     }
-    //     const isMatch = await bcrypt.compare(password, userExist.password)
-    //     if(!isMatch) 
-    //     {
-    //         return res.json({ msg: "Invalid Password"})
-    //     }
-    //     else{
-    //         const token = await userExist.generateAuthToken(res)
-    //         console.log("Your generated token is: ",token)
-    //         return res.json({status:200, msg:"Logged in", token:token, userExist:userExist})
-    //     }
-    // }
-    // else if(!email && username && password){
-    //     console.log("3", username, email, password)
-
-    //     const userExist = await USER.findOne({username:username})
-
-    //     if(!userExist){
-    //         return res.json({msg : "Username not found"})
-    //     }
-    //     const isMatch = await bcrypt.compare(password, userExist.password)
-    //     if(!isMatch) 
-    //     {
-    //         return res.json({ msg: "Invalid Password"})
-    //     }
-    //     else{
-    //         const token = await userExist.generateAuthToken(res)
-    //         console.log("Your generated token is: ",token)
-    //         return res.json({status:200, msg:"Logged in", token:token, userExist:userExist})
-    //     }
-    // }
-
-    // else if(!username && email && password){
-    //     console.log("4", username, email, password)
-
-    //     const userExist = await USER.findOne({email:email})
-
-    //     if(!userExist){
-    //         return res.json({msg : "Email not found"})
-    //     }
-    
-    //     const isMatch = await bcrypt.compare(password, userExist.password)
-    
-    //     if(!isMatch) 
-    //     {
-    //         return res.json({ msg: "Invalid Password"})
-    //     }
-    //     else{
-    //         const token = await userExist.generateAuthToken(res)
-    //         console.log("Your generated token is: ",token)
-    //         return res.json({status:200, msg:"Logged in", token:token, userExist:userExist})
-    //     }
-    // }
 }
 
 exports.uploadpart1 = async (req,res) => {
@@ -342,13 +274,6 @@ exports.insertPhotosInMongo = async (req, res) =>{
                 )
             })
     
-            // if (result) {
-            //     console.log('Karobar photos updated');
-            // } 
-            // else {
-            //     console.log("Error occured while uploading gallery photos. Rest data saved." )
-            //     return res.status(200).json({ msg:"Error occured while uploading gallery photos. Rest data saved." });
-            // }
         }
         else{
             console.log("Karobar photos not provided.")
