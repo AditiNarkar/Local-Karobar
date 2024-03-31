@@ -2,8 +2,6 @@
 
 <img src="https://drive.google.com/uc?export=view&id=1JlXBj79sCrZMAnbs3ZpvXB-I3x2jhAqI" style="width: 500px; max-width: 100%; height: auto" />
 
-Made In - Third Year B.E. in IT
-
 ## Introduction
 The Local कारोबार website is a dynamic and inclusive platform designed to empower and promote various facets of the local community. With a focus on fostering growth and connectivity, the website serves as a hub for small-scale shops, wholesale and retail businesses, local vendors, and freelancers ranging from artists and skilled traders to essential service providers like milkmen, plumbers, and maids.
 
