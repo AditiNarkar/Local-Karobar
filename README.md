@@ -1,6 +1,6 @@
 # Local Karobar using MERN
 
-<img src="https://drive.google.com/uc?export=view&id=1JlXBj79sCrZMAnbs3ZpvXB-I3x2jhAqI" style="width: 200px; max-width: 100%; height: auto" />
+<img src="https://drive.google.com/uc?export=view&id=1JlXBj79sCrZMAnbs3ZpvXB-I3x2jhAqI" style="width: 500px; max-width: 100%; height: auto" />
 
 Made In - Third Year B.E. in IT
 
