@@ -182,8 +182,7 @@ const UploadStep1 = () => {
   }
 
   const step1URL = "http://localhost:5000/api/uploadstep1process"
-  //const token = localStorage.getItem('jwt')
-
+ 
   var [data, setdata] = useState({})
   const getData = async () => {
     
@@ -200,13 +199,11 @@ const UploadStep1 = () => {
 
       const udata = await res.json()
 
-      //console.log("Upload set 1 data: ", udata)
       setdata(udata)
       
       if(!res.status == 200){
         const error = new Error(res.error)
         throw error
-       
       }
 
     }catch(e){
@@ -304,66 +301,6 @@ const UploadStep1 = () => {
             })
           }
 
-            {/* <button className="artist"  >
-              <img className="spellcheck-icon" alt="" src="/spellcheck1.svg" />
-              <div className="education">Education</div>
-            </button>
-
-            <button className="artist1" id="artist-carpentery" onClick={(e) =>  {
-              e.preventDefault()
-              setCategoryObj(e.target.id)}
-             } >
-              <img className="spellcheck-icon" alt="" src="/palette.svg" />
-              <div className="artist-carpentery">Artist / Carpentery</div>
-            </button>
-            <button className="artist2" id="household-services" onClick={(e) => {e.preventDefault()
-              setCategoryObj(e.target.id)}}>
-              <img className="spellcheck-icon" id="household-services" alt="" src="/tools.svg" />
-              <div className="household-services" id="household-services">Household Services</div>
-            </button>
-            <button className="artist3">
-              <img className="shop1-icon" alt="" src="/shop11.svg" />
-              <div className="wholesale-retail">Wholesale /Retail</div>
-            </button>
-            <button className="artist4">
-              <img className="janitor-icon" alt="" src="/janitor@2x.png" />
-              <div className="maid-cleaner">Maid / Cleaner</div>
-            </button>
-            <button className="artist5">
-              <img className="spellcheck-icon" alt="" src="/laptop.svg" />
-              <div className="wholesale-retail">Freelancer</div>
-            </button>
-            <button className="artist6">
-              <img className="spellcheck-icon" alt="" src="/camera.svg" />
-              <div className="photography">Photography</div>
-            </button>
-            <button className="artist7">
-              <img className="guru-icon" alt="" src="/guru@2x.png" />
-              <div className="gym-yoga">Gym / Yoga</div>
-            </button>
-            <button className="artist8">
-              <img className="spellcheck-icon" alt="" src="/cart4.svg" />
-              <div className="general-store">General Store</div>
-            </button>
-            <button className="artist9">
-              <img className="guru-icon" alt="" src="/dining-room@2x.png" />
-              <div className="eatery">Eatery</div>
-            </button>
-            <button className="artist10">
-              <img className="spellcheck-icon" alt="" src="/geoalt.svg" />
-              <div className="tours-travels">Tours &Travels</div>
-            </button>
-            <button className="artist11">
-              <img
-                className="spellcheck-icon"
-                alt=""
-                src="/listcolumnsreverse.svg"
-              />
-              <div className="others">Others</div>
-            </button> */}
-
-
-
           </div>
 
           <button className="next-button" onClick={postInfo} />
@@ -405,27 +342,6 @@ const UploadStep1 = () => {
         />
       </section>
       <section className="green-line-removebg-preview-1" />
-
-
-      {/* <header className="navbar">
-        <div className="nav-links">
-          <h1 className="contact">Contact</h1>
-          <h1 className="about">{`About `}</h1>
-          <h1 className="home">Home</h1>
-        </div>
-        <button className="logout-2-1" />
-        <div className="profile">Signed In as: Username</div>
-      </header> */}
-
-
-
-
-{/*
-      <section className="footer">
-        <div className="copyright-footer">CopyRight FOOTER</div>
-      </section> */}
-
-
 
 
 
